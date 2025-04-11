@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#121212",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-dark text-white min-h-screen flex items-center justify-center p-6"
+  >
+    <div class="max-w-3xl w-full">
+      <div
+        class="flex-1 md:flex flex-row md:items-center justify-between mb-6 md:mb-12"
+      >
+        <div class="">
+          <h1 class="text-3xl md:text-5xl font-bold mb-2">
+            Hi, I'm <span class="name">Mishael</span>
+            <span>👋</span>
+          </h1>
+          <p class="md:text-xl text-gray-300">
+            Aspiring Software Engineer. I love building things and helping
+            people.
+          </p>
+        </div>
+        <div class="mt-3 md:mt-0">
+          <img
+            src="/me.jpg"
+            alt="Profile Picture"
+            class="rounded-full w-24 h-24 md:w-28 md:h-28 object-cover border-2 border-gray-700"
+          />
+        </div>
+      </div>
+
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4">About</h2>
+        <p class="text-gray-300 mb-4">
+          At the end of 2024, I quit my job as a Logistics Manager to go
+          fulltime into building and scaling software products. In the past,
+          <span class="font-medium">I pursued a degree in chemistry</span>,
+          interned at various research institutes, and secured a role as a
+          logistics manager. I also had the pleasure of being a part of the
+          second cohort of the Federal Government Initiative for Technical
+          Talents <span class="font-medium">3MTT</span>.
+        </p>
+      </div>
+    </div>
+
+    <style>
+      .wave {
+        display: inline-block;
+      }
+
+      body {
+        background-color: #121212;
+      }
+    </style>
+  </body>
+</html>
